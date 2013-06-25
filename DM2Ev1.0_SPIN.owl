@@ -324,7 +324,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have either edm:isShownAt or edm:isShownBy"
 					} WHERE { select ?this ?o1 ?o2 where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/isShownAt&gt; ?o1 } .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/isShownBy&gt; ?o2 } .
 							FILTER (!BOUND(?o1) &amp;&amp; !BOUND($o2))
@@ -343,7 +343,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have http://www.europeana.eu/schemas/edm/aggregatedCHO"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/aggregatedCHO&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -361,7 +361,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have http://www.europeana.eu/schemas/edm/dataProvider"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/dataProvider&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -379,7 +379,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have http://www.europeana.eu/schemas/edm/provider"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/provider&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -397,7 +397,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have http://www.europeana.eu/schemas/edm/rights"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							optional { ?this &lt;http://www.europeana.eu/schemas/edm/rights&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -419,7 +419,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/aggregatedCHO"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/aggregatedCHO&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -436,7 +436,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/dataProvider"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/dataProvider&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -453,7 +453,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/provider"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/provider&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -470,7 +470,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/net7/korbo/vocab#hasAnnotableVersionAt"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://purl.org/net7/korbo/vocab#hasAnnotableVersionAt&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -487,7 +487,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/isShownAt"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/isShownAt&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -504,7 +504,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/isShownBy"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/isShownBy&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -521,7 +521,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/object"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/object&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -538,7 +538,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/rights"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.openarchives.org/ore/terms/Aggregation&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/rights&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -690,7 +690,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have either description or title"
 					} WHERE { select ?this ?d ?t where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							optional { ?this &lt;http://purl.org/dc/terms/description&gt; ?d } .
 							optional { ?this &lt;http://purl.org/dc/terms/title&gt; ?t } .
 							FILTER (!BOUND(?d) &amp;&amp; !BOUND($t))
@@ -709,7 +709,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have dc:subject"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							optional { ?this &lt;http://purl.org/dc/elements/1.1/subject&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -745,7 +745,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Must have http://purl.org/dc/elements/1.1/language"
 					} WHERE { select ?this ?o where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							optional { ?this &lt;http://purl.org/dc/elements/1.1/language&gt; ?o } .
 							FILTER (!BOUND(?o))
 							}
@@ -766,7 +766,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one dm2e:printedAt"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/printedAt&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -783,7 +783,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one dm2e:publishedAt"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/publishedAt&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -800,7 +800,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one dm2e:shelfmarkLocation"
 					} WHERE { select distinct ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/shelfmarkLocation&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -817,7 +817,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/dc/terms/issued"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/dc/terms/issued&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -834,7 +834,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/dc/terms/spatial"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/dc/terms/spatial&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -851,7 +851,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://www.europeana.eu/schemas/edm/currentLocation"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://www.europeana.eu/schemas/edm/currentLocation&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -868,7 +868,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/callNumber"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/callNumber&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -885,7 +885,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/condition"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/condition&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -902,7 +902,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/explicit"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/explicit&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -919,7 +919,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/incipit"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/incipit&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -936,7 +936,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/levelOfGenesis"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/levelOfGenesis&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -953,7 +953,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/pageDimension"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/pageDimension&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -970,7 +970,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/watermark"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/watermark&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -987,7 +987,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://onto.dm2e.eu/schemas/dm2e/1.0/writtenAreaDimension"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://onto.dm2e.eu/schemas/dm2e/1.0/writtenAreaDimension&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1004,7 +1004,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/dc/terms/extent"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/dc/terms/extent&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1021,7 +1021,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/ontology/bibo/isbn"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/ontology/bibo/isbn&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1038,7 +1038,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/ontology/bibo/issn"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/ontology/bibo/issn&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1055,7 +1055,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/ontology/bibo/numPages"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/ontology/bibo/numPages&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1072,7 +1072,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/ontology/bibo/numVolumes"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/ontology/bibo/numVolumes&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}
@@ -1089,7 +1089,7 @@ Contributors:
                          spin:violationPath ?this ;
                          rdfs:label "Not more than one http://purl.org/ontology/bibo/pages"
 					} WHERE { select ?this COUNT(?o) where {
-							?aggr edm:aggregatedCHO ?this .
+							?this rdf:type &lt;http://www.europeana.eu/schemas/edm/ProvidedCHO&gt; .
 							?this &lt;http://purl.org/ontology/bibo/pages&gt; ?o .
 							} GROUP BY ?this HAVING (COUNT(?o) > 1)
 					}

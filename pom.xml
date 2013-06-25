@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>at.ac.onb.fue</groupId>
-  <artifactId>spinAPItest</artifactId>
+  <artifactId>sm2e-spinval</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spinAPItest</name>
+  <name>dm2e-spinval</name>
   <url>http://maven.apache.org</url>
 
   <properties>
