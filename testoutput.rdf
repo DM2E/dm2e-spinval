@@ -1,0 +1,138 @@
+<rdf:RDF
+    xmlns:j.0="vivo:"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdaGr2="http://RDVocab.info/ElementsGr2/"
+    xmlns:edm="http://www.europeana.eu/schemas/edm/"
+    xmlns:korbo="http://purl.org/net7/korbo/vocab#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:pro="http://purl.org/spar/pro/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dm2e="http://onto.dm2e.eu/schemas/dm2e/0.3/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:dm2edata="http://data.dm2e.eu/data/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#" > 
+  <rdf:Description rdf:about="dm2edata:agent/onb/118958062">
+    <rdaGr2:dateOfDeath>1472</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>1405</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Gennadius,,Scholarius,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118958062"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/Austrian_National_Library">
+    <rdf:type rdf:resource="vivo:Library"/>
+    <skos:prefLabel xml:lang="de">ONB</skos:prefLabel>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/118639633">
+    <rdaGr2:dateOfDeath>ca. 5. Jh v. Chr.</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>ca. 5. Jh v. Chr.</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Hippocrates,,Chius,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118639633"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:item/onb/codices/AL00test">
+    <edm:type>TEXT</edm:type>
+    <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/ProvidedCHO"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:aggregation/onb/codices/AL00test">
+    <edm:aggregatedCHO rdf:resource="dm2edata:item/onb/codices/AL00test"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/118781642">
+    <rdaGr2:dateOfDeath>1425</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>1350</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Manuel,II.,Imperium Byzantinum, Imperator,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118781642"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:item/onb/codices/AL00158127">
+    <dm2e:contributor rdf:resource="dm2edata:agent/onb/118958062"/>
+    <dm2e:callNumber>Cod. Suppl. gr. 75</dm2e:callNumber>
+    <dcterms:spatial rdf:resource="dm2edata:place/onb/Konstantinopel"/>
+    <edm:type>TEXT</edm:type>
+    <dc:type rdf:resource="http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary/#text"/>
+    <dm2e:pageDimension>220 x 145 mm</dm2e:pageDimension>
+    <pro:author rdf:resource="dm2edata:agent/onb/118712586"/>
+    <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/ProvidedCHO"/>
+    <pro:author rdf:resource="dm2edata:agent/onb/187186154"/>
+    <pro:author rdf:resource="dm2edata:agent/onb/100950957"/>
+    <dc:language>grc</dc:language>
+    <dm2e:previousOwner rdf:resource="dm2edata:agent/onb/"/>
+    <dm2e:writer rdf:resource="dm2edata:agent/onb/10095295X"/>
+    <dcterms:issued>1400-1433</dcterms:issued>
+    <bibo:numPages>Handschrift; III+320 Bll.</bibo:numPages>
+    <dcterms:title xml:lang="de">Opera philosophica, mathematica et astronomica</dcterms:title>
+    <pro:author rdf:resource="dm2edata:agent/onb/118557823"/>
+    <dcterms:tableOfContents>Bl. 1r-12v.281v-285v: Johannes Chortasmenus, Prolegomena in Logicam Aristotelis, Prolegomena in Rhetoricam (Bl. 97r-112v), Metaphrasis in Analytica priora Aristotelis (Liber 1 et 2) (Bl. 113r-115v. 119r-174v), Monodia in Theodorum Antiochitam (Bl. 175r-178v), Ep. de Theodoro Antiochita ad Atumen (Bl. 178v-187r), Epistulae 1-40.41-52.53-54.55-56 (Bl. 187r-214v.256v-270r.289r -290r.301v-302v), Demegoria Timuris (Bl. 290r-295r), Oratio ad Imperatorem Manuelem II. cum Protheoria (Bl. 295r-301v.302rv), Epitaphius in Andream Asan (Bl. 304r-311v), Praecepta moralia (Bl. 304r-311v); Bl. 17r-19v: Anonymi Calculus eclipseos anni 1415; Bl. 21v-24v: Isaac Argyrus, Cycli solares et lunares, De initio anni et cyclis solaribus et lunaribus (Bl. 29r-31r), Tabellae astronomicae ab anno 1368 (Bl. 31r-33v), Tabellae lunares (Bl. 34r-52v); Bl. 53v-60v: Anonymi Erotemata grammatica; Bl. 61v-94r: Manuel Chrysoloras, Erotemata; Bl. 174v: Johannes Philoponus, Comm. in Analytica posteriora (Excerpta); Bl. 219r-229r: Aristoteles, Analytica posteriora (Excerpta), Topica (Excerpta ex Libro 1) (Bl. 229v-233v); Bl. 234r-256v: Anonymi Commentarius in Schemata Ptolemaei; Bl.263r-269r: Anonymi Relatio de obsidione Constantinopolis; Bl.270v-281v: Anonymi Quaestiones mathematicae; Bl. 286rv.288rv.287r: Anonymi De zodiaco; Bl. 287rv: Anonymi De titulo Organi; Bl. 303r-304r: Hippocrates Chius, De quadratura circuli</dcterms:tableOfContents>
+    <pro:author rdf:resource="dm2edata:agent/onb/118639633"/>
+    <pro:author rdf:resource="dm2edata:agent/onb/118650130"/>
+    <dm2e:subtitle xml:lang="de">Sog. Hausbuch des Johannes Chortasmenos, dessen Werke hier autograph überliefert sind</dm2e:subtitle>
+    <bibo:recipient rdf:resource="dm2edata:agent/onb/118781642"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/118712586">
+    <rdaGr2:dateOfDeath>570</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>490</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Johannes,,Philoponus,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118712586"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/100950957">
+    <rdaGr2:dateOfDeath>ca. gest. ca. 1373</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>ca. gest. ca. 1373</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Isaac,,Argyrus,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/100950957"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:place/onb/Konstantinopel">
+    <skos:prefLabel xml:lang="de">Konstantinopel</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/118557823">
+    <rdaGr2:dateOfDeath>1436</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>1370</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Johannes,,Chortasmenus,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118557823"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/118650130">
+    <rdaGr2:dateOfDeath>vv322</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>v384-v322</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Aristoteles,,,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/118650130"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/">
+    <skos:prefLabel></skos:prefLabel>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/10095295X">
+    <rdaGr2:dateOfDeath>ca. 1391/92 - 1445</rdaGr2:dateOfDeath>
+    <rdaGr2:dateOfBirth>ca. 1391/92 - 1445</rdaGr2:dateOfBirth>
+    <skos:prefLabel>Marcus,,Eugenicus,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/10095295X"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:aggregation/onb/codices/AL00158127">
+    <dcterms:modified>2012-12-03T00:00:00</dcterms:modified>
+    <dcterms:created>2010-10-07T00:00:00</dcterms:created>
+    <edm:dataProvider rdf:resource="dm2edata:agent/onb/Austrian_National_Library"/>
+    <edm:provider rdf:resource="dm2edata:agent/dm2e/DM2E"/>
+    <edm:aggregatedCHO rdf:resource="dm2edata:item/onb/codices/AL00158127"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/onb/187186154">
+    <skos:prefLabel>Manuel,,Chrysoloras,</skos:prefLabel>
+    <dc:identifier rdf:resource="http://d-nb.info/gnd/187186154"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="dm2edata:agent/dm2e/DM2E">
+    <skos:prefLabel xml:lang="de">DM2E</skos:prefLabel>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </rdf:Description>
+</rdf:RDF>
